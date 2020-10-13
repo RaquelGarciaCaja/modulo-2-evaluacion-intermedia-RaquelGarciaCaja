@@ -2,8 +2,9 @@
 
 const btn = document.querySelector(".button");
 const clue = document.querySelector(".clue");
-const attempt = document.querySelector(".attempt");
 const input = document.querySelector(".input");
+const attempt = document.querySelector(".attempt");
+
 
 
 
@@ -14,8 +15,20 @@ function getRandomNumber(max) {
 const numberRandom = getRandomNumber(100);
 console.log(numberRandom);
 
+// Hacer el sumatorio
+let acc = 0 ;
+console.log(acc);
+
+function sumAtt() {     
+    // inicia el incremento
+    attempt.innerHTML = acc++;
+    console.log(attempt.innerHTML);
+}
+
+
 // función listener
 function go() {
+    // cambiar pista
     const inputValue = parseInt(input.value);
     console.log(inputValue);
     // condicionales de clue.Entrando en el if
@@ -36,8 +49,12 @@ function go() {
         console.log("Has ganado campeona!!!");
         }
     }
+
+    // sumar intentos
+    sumAtt();
 }
 
 go();
 
 btn.addEventListener('click', go);
+
