@@ -1,0 +1,17 @@
+*{
+    text-align: center;
+}
+
+.page{
+    padding-bottom: 10px;
+}
+
+.button{
+    margin-left: 5px;
+}
+
+.paragrah{
+    border: 2px black solid;
+    margin: 10px 200px;
+    border-radius: 10px;
+}
